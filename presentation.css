@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* CSS Document */
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background:black;
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;
+	background-color: black;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+	background-color: black;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+.menu{
+	background-color: black;
+}
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+
+h1{
+	text-align: center;
+}
+h5{
+	color: white;
+}
+header {
+    width: 100%;
+    height: 30vh;
+}
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 20px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+.skill-per{
+  height: 20px;
+  background-color: #DA3CE5;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+a{
+  border-radius: 4px;
+}
+.btn:not(:disabled):not(.disabled){
+cursor: pointer;
+margin-left: 650px;
+margin-top: 130px;
+display: block;
+padding: 10px;
+width: 130px;
+text-align: center;
+}
+
+.puce{
+	margin-top: 200px;
+	display: block;
+    padding: 10px;
+    width: 190px;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+	background: #A72CD2 0% 0% no-repeat padding-box;
+	box-shadow: -12px -12px 8px #00000029;
+	border-radius: 57px;
+    opacity: 1;
+	margin-left: 620px;
+	font-size: 16px;
+}
+.footer{
+	background-color: black;
+	width: 100%;
+	text-decoration: none;
+}
+.texte{
+	text-align: center!important;
+	font-family: poppins, sans-serif!important;
+	color: white!important;
+}
+.informations{
+	text-decoration: none!important;
+	text-align: center!important;
+	font-family:poppins, sans-serif!important; '
+    color: white!important;
+	
+}
+.a{
+	text-decoration: none!important;
+}
+.p{
+	text-decoration: none!important;
+}
+.contact{
+	text-align: center!important;
+	font-family: poppins,sans-serif!important;
+	color: white;
+	border-bottom-style: solid;
+	text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.puce{
+		margin-left: 110px;
+	}
+	.skills{
+		margin-left: -20px;
+	}
+}
