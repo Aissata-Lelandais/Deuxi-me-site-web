@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<title>Coté Front/End</title>
+	 <link rel="stylesheet" href="CSS/style3.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="ecv.js">
+	<link rel="stylesheet" href="CSS/presentation.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+            <header>
+				  <div class="wrapper">
+                  <nav>
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+                      <div class="logo">
+						  <a href="aissata.html">
+							  <img src="IMAGES/A.L.jpg" height="75" width="100"></a>
+                        </div>
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="aissata.html">HOME</a></li>
+                                    <li><a href="presentation.html">COTÉ FRONT/ END</a></li>
+                                    <li><a href="portefolio.html">PORTFOLIO</a></li>
+                                    <li><a href="mailto:aissata.lelandais@gmail.coml">CONTACT</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+				</div>
+            </header>
+	  
+ <body>
+	  <h1>Languages</h1>
+    <div class="skills">
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+		 <img src="IMAGES/html.png" height="30" width="30">
+        <div class="skill-bar">
+          <div class="skill-per" per="60"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+		  <img src="IMAGES/css3-01_icon-icons.com_50918.png" height="30" width="30">
+        <div class="skill-bar">
+          <div class="skill-per" per="50"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Javascript</div>
+		  <img src="IMAGES/js.png" height="30" width="30">
+        <div class="skill-bar">
+          <div class="skill-per" per="40"></div>
+        </div>
+      </div>
+	  <div class="skill">
+        <div class="skill-name">PHP</div>
+		  <img src="IMAGES/php.png" height="30" width="30">
+        <div class="skill-bar">
+          <div class="skill-per" per="30"></div>
+        </div>
+      </div>
+	  </div>
+	  <h1>OUTILS</h1>
+	  <div class="skills">
+      <div class="skill">
+        <div class="skill-name">Adobe XD</div>
+		 <img src="IMAGES/xd.png" height="25" width="25">
+        <div class="skill-bar">
+          <div class="skill-per" per="60"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name"> Adobe Illustrator</div>
+		  <img src="IMAGES/Ai.png" height="30" width="30">
+        <div class="skill-bar">
+          <div class="skill-per" per="50"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Adobe Indesign</div>
+		  <img src="IMAGES/id.png" height="30" width="30">
+        <div class="skill-bar">
+          <div class="skill-per" per="40"></div>
+        </div>
+      </div>
+    </div>  
+	  <h1>FRAMEWORK</h1>
+	  <div class="skills">
+      <div class="skill">
+        <div class="skill-name">BOOTSTRAP</div>
+		 <img src="IMAGES/bootstrap_icon_135870.png" height="30" width="30">
+        <div class="skill-bar">
+          <div class="skill-per" per="50"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name"> VUE Js</div>
+		  <img src="IMAGES/vs.png" height="30" width="30">
+        <div class="skill-bar">
+          <div class="skill-per" per="30"></div>
+        </div>
+      </div>
+	  </div>
+		   <a href="experiences.html" class="puce">Éxpériences & Formations</a>
+		  </body>
+	  		  <div id="footer">
+			  	<footer class="footer">
+      <div class="texte">
+        <h2 >A.L FRONT END DEVELOPPER</h2>
+        <p>Étudiante en Mastère Développement web à ECV DIGITAL NANTES</p>
+      </div>
+      <hr class="w-100 ">
+      <div class="informations">
+        <h5>ORIENTEZ VOUS</h5>
+        <p>
+          <a href="aissata.html">HOME</a>
+        </p>
+        <p>
+          <a href="presentation.html">COTÉ FRONT/END</a>
+        </p>
+        <p>
+          <a href="portefolio.html">PORTEFOLIO</a>
+		  </p>
+		</div>
+      <hr class="w-100 clearfix d-md-none">
+      <div class="contact">
+        <h5 >Contact</h5>
+        <p>
+          <i class="ville"></i> Nantes</p>
+        <p>
+          <i class="mail"></i> 	aissata.lelandais@gmail.com</p>
+        <p>
+          <i class="number"></i> + 06 70 14 19 73</p>
+					</div>
+       </footer>
+				  
+				  
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+      </script>
+    <script>
+      $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1000,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+    </script>
+</div></html>
